@@ -95,14 +95,14 @@ body {
     justify-content: space-between;
     background-color: #d8d1d0;
     padding: 10px;
-    top:20%;
+    top:25%;
     
     transition: display 0.5s; /* 添加过渡动画以平滑显示/隐藏 */
    
     font-size: 15pt;
     /* 添加垂直滚动条 */
     overflow:auto;
-    max-height:450pt; /* 设置最大高度 */
+    max-height:80vh; /* 设置最大高度 */
     
     z-index: 1;
 

@@ -2,7 +2,7 @@
 var iconInfo = {
     camel: { url: '/media/animal_icon/camel.PNG', scaledSize: new google.maps.Size(25, 25)},
     cat: { url: '/media/animal_icon/cat2.png',scaledSize: new google.maps.Size(25,25) },
-    dog: { url: '/media/animal_icon/dog1.png', scaledSize: new google.maps.Size(25, 25) },
+    dog: { url: '/media/animal_icon/dog2.png', scaledSize: new google.maps.Size(25, 25) },
     rhino: { url: '/media/animal_icon/rhino.png' },
     leopard: { url: '/media/animal_icon/leopard.png', scaledSize: new google.maps.Size(50, 50) },
     lion: { url: '/media/animal_icon/lion1.png',scaledSize: new google.maps.Size(25, 25) },
@@ -238,6 +238,9 @@ handleCheckboxChange('chaogong-Checkbox', '朝貢');
 handleCheckboxChange('shenfen-Checkbox', '身份象徵');
 handleCheckboxChange('junshi-Checkbox', '軍事');
 handleCheckboxChange('wenhua-Checkbox', '文化娛樂');
+handleCheckboxChange('jiaotong-Checkbox', '交通運輸');
+handleCheckboxChange('nongye-Checkbox', '農業生產');
+handleCheckboxChange('yinshi-Checkbox', '飲食');
 
 handleCheckboxChange('zhong-Checkbox', '中亞');
 handleCheckboxChange('nan-Checkbox', '南亞');
@@ -245,10 +248,14 @@ handleCheckboxChange('xi-Checkbox', '西亞');
 handleCheckboxChange('bei-Checkbox', '北亞');
 handleCheckboxChange('dong-Checkbox', '東亞');
 handleCheckboxChange('dongnan-Checkbox', '東南亞');
-
 handleCheckboxChange('feizhou-Checkbox', '非洲');
 handleCheckboxChange('ouzhou-Checkbox', '歐洲');
 handleCheckboxChange('meizhou-Checkbox', '美洲');
+handleCheckboxChange('dayagnzhou-Checkbox', '大洋洲');
+handleCheckboxChange('xiyu-Checkbox', '古代西域');
+
+
+
 
 
 
@@ -810,60 +817,24 @@ checkboxes.forEach(function(checkbox) {
     });
 });
 
-const checkboxContainer1 = document.getElementById('animalCategoryContainer');
-const selectAllCheckbox1 = checkboxContainer1.querySelector('.category-select-all');
-const otherCheckboxes1 = checkboxContainer1.querySelectorAll('.category-checkbox:not(.category-select-all)');
+function handleCheckboxContainer(containerId) {
+    const checkboxContainer = document.getElementById(containerId);
+    const selectAllCheckbox = checkboxContainer.querySelector('.category-select-all');
+    const otherCheckboxes = checkboxContainer.querySelectorAll('.category-checkbox:not(.category-select-all)');
 
-// 监听容器内的复选框状态变化
-otherCheckboxes1.forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
-        const allOthersChecked = [...otherCheckboxes1].every(cb => cb.checked);
-
-        // 根据情况勾选/取消全选复选框
-        selectAllCheckbox1.checked = allOthersChecked;
+    otherCheckboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', function() {
+            const allOthersChecked = [...otherCheckboxes].every(cb => cb.checked);
+            selectAllCheckbox.checked = allOthersChecked;
+        });
     });
-});
+}
 
-const checkboxContainer2 = document.getElementById('dynastyCategoryContainer');
-const selectAllCheckbox2 = checkboxContainer2.querySelector('.category-select-all');
-const otherCheckboxes2 = checkboxContainer2.querySelectorAll('.category-checkbox:not(.category-select-all)');
+handleCheckboxContainer('animalCategoryContainer');
+handleCheckboxContainer('dynastyCategoryContainer');
+handleCheckboxContainer('waysCategoryContainer');
+handleCheckboxContainer('areaCategoryContainer');
 
-// 监听容器内的复选框状态变化
-otherCheckboxes2.forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
-        const allOthersChecked = [...otherCheckboxes2].every(cb => cb.checked);
-
-        // 根据情况勾选/取消全选复选框
-        selectAllCheckbox2.checked = allOthersChecked;
-    });
-});
-
-const checkboxContainer3 = document.getElementById('waysCategoryContainer');
-const selectAllCheckbox3 = checkboxContainer3.querySelector('.category-select-all');
-const otherCheckboxes3 = checkboxContainer3.querySelectorAll('.category-checkbox:not(.category-select-all)');
-
-// 监听容器内的复选框状态变化
-otherCheckboxes3.forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
-        const allOthersChecked = [...otherCheckboxes3].every(cb => cb.checked);
-
-        // 根据情况勾选/取消全选复选框
-        selectAllCheckbox3.checked = allOthersChecked;
-    });
-});
-const checkboxContainer4 = document.getElementById('areaCategoryContainer');
-const selectAllCheckbox4 = checkboxContainer4.querySelector('.category-select-all');
-const otherCheckboxes4 = checkboxContainer4.querySelectorAll('.category-checkbox:not(.category-select-all)');
-
-// 监听容器内的复选框状态变化
-otherCheckboxes4.forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
-        const allOthersChecked = [...otherCheckboxes4].every(cb => cb.checked);
-
-        // 根据情况勾选/取消全选复选框
-        selectAllCheckbox4.checked = allOthersChecked;
-    });
-});
 // document.addEventListener('DOMContentLoaded', function() {
 //     // 获取所有的复选框
 //     var checkboxes = document.querySelectorAll('.category-checkbox');
@@ -874,4 +845,11 @@ otherCheckboxes4.forEach(function(checkbox) {
 //     });
 // });
 
-
+function toggleContainer(containerId) {
+    var container = document.getElementById(containerId);
+    if (container.style.display === 'none') {
+        container.style.display = 'flex';
+    } else {
+        container.style.display = 'none';
+    }
+}
