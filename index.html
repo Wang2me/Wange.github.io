@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>交互地图googleapi</title>
     <!-- 引入 Google Maps JavaScript API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkS_NQZ6f1uts0OL68H6KkwmSBnt25ObU&language=en"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkS_NQZ6f1uts0OL68H6KkwmSBnt25ObU&language=zh"></script>
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
 
     <!-- <script type="text/javascript">
@@ -49,12 +49,13 @@
        <div class="zoomcontainer" id="zoom">
         <button id="zoomInButton">+</button>        
         <div class="vertical-slider-container">
-            <input type="range" id="zoomSlider" min="0" max="3" value="2" step="1" list="tickmarks" class="vertical-slider">
+            <input type="range" id="zoomSlider" min="0" max="4" value="2" step="1" list="tickmarks" class="vertical-slider">
             <datalist id="tickmarks">
                 <option>0</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
+                <option>4</option>
             </datalist>
         </div>
         <button id="zoomOutButton">-</button>
@@ -111,10 +112,13 @@
         <div class="subcategory-container" id="11CategoryContainer">
 
         <label class="category-button">
-            <input type="checkbox" class="category-checkbox" id="ocean-Checkbox" data-category="D"  data-value="1"value="海上絲綢之路"> 海上絲綢之路
+            <input type="checkbox" class="category-checkbox" id="ocean-Checkbox" data-category="D"  value="海上絲綢之路"> 海上絲綢之路
         </label>
         <label class="category-button">
-            <input type="checkbox" class="category-checkbox" id="land-Checkbox" data-category="D"  data-value="1" value="陸上絲綢之路"> 陸上絲綢之路
+            <input type="checkbox" class="category-checkbox" id="land-Checkbox" data-category="D"   value="陸上絲綢之路"> 陸上絲綢之路
+        </label>
+        <label class="category-button">
+            <input type="checkbox" class="category-checkbox" id="qita-Checkbox" data-category="D"   value="其他"> 其他
         </label>
         </div>
 
@@ -126,29 +130,40 @@
 
         <div class="subcategory-container" id="animalCategoryContainer">
             <label class="category-button">
-                <input type="checkbox" class="category-checkbox category-select-all" data-category="A" data-value="1"> 全选
+                <input type="checkbox" class="category-checkbox category-select-all" data-category="A" > 全选
            </label>  
         <label class="category-button">
-            <input type="checkbox" class="category-checkbox" id="camel-Checkbox" data-category="A" data-value="1" value="camel"> 駱駝
+            <input type="checkbox" class="category-checkbox" id="camel-Checkbox" data-category="A"  value="camel"> 駱駝
         </label>
         <label class="category-button">
-            <input type="checkbox" class="category-checkbox" id="cat-Checkbox"data-category="A" data-value="2" value="cat"> 貓
+            <input type="checkbox" class="category-checkbox" id="cat-Checkbox"data-category="A"  value="cat"> 貓
         </label>
         <label class="category-button">
-            <input type="checkbox" class="category-checkbox" id="dog-Checkbox"data-category="A" data-value="3" value="dog"> 狗
+            <input type="checkbox" class="category-checkbox" id="dog-Checkbox"data-category="A"  value="dog"> 狗
         </label>
         <label class="category-button">
-            <input type="checkbox" class="category-checkbox" id="rhino-Checkbox" data-category="A" data-value="4" value="rhino"> 犀牛
+            <input type="checkbox" class="category-checkbox" id="rhino-Checkbox" data-category="A"  value="rhino"> 犀牛
         </label>
         <label class="category-button">
-            <input type="checkbox" class="category-checkbox" id="leopard-Checkbox" data-category="A" data-value="5" value="leopard"> 豹
+            <input type="checkbox" class="category-checkbox" id="leopard-Checkbox" data-category="A"  value="leopard"> 豹
         </label>
         <label class="category-button">
-            <input type="checkbox" class="category-checkbox" id="lion-Checkbox" data-category="A" data-value="6" value="lion"> 獅
+            <input type="checkbox" class="category-checkbox" id="lion-Checkbox" data-category="A"  value="lion"> 獅
         </label>
         <label class="category-button">
-            <input type="checkbox" class="category-checkbox" id="elephant-Checkbox" data-category="A" data-value="7" value="elephant"> 象
+            <input type="checkbox" class="category-checkbox" id="elephant-Checkbox" data-category="A"  value="elephant"> 象
         </label>
+        <label class="category-button">
+            <input type="checkbox" class="category-checkbox" id="banma-Checkbox" data-category="A"  value="zebra"> 斑馬
+        </label>
+        <label class="category-button">
+            <input type="checkbox" class="category-checkbox" id="changjinglu-Checkbox" data-category="A"  value="giraffe"> 長頸鹿
+        </label>
+        <label class="category-button">
+            <input type="checkbox" class="category-checkbox" id="horse-Checkbox" data-category="A"  value="horse"> 馬
+        </label>
+
+
         </div>
         <hr width="100%" />
         <button class="category-sub" id="dynastyButton" onclick="toggleContainer('dynastyCategoryContainer')">朝代类别</button>
@@ -201,28 +216,28 @@
            </label>  
 
             <label class="category-button"> 
-                <input type="checkbox" class="category-checkbox" id="zongjiao-Checkbox" data-category="C" data-value="1"value="宗教信仰"> 宗教信仰 
+                <input type="checkbox" class="category-checkbox" id="zongjiao-Checkbox" data-category="C" value="宗教信仰"> 宗教信仰 
             </label>
             <label class="category-button"> 
-                <input type="checkbox" class="category-checkbox" id="chaogong-Checkbox" data-category="C" data-value="1"value="朝貢"> 朝貢
+                <input type="checkbox" class="category-checkbox" id="chaogong-Checkbox" data-category="C" value="朝貢"> 朝貢
             </label>
             <label class="category-button"> 
-                <input type="checkbox" class="category-checkbox" id="shenfen-Checkbox" data-category="C" data-value="1"value="身份象徵"> 身份象徵
+                <input type="checkbox" class="category-checkbox" id="shenfen-Checkbox" data-category="C" value="身份象徵"> 身份象徵
             </label>
             <label class="category-button"> 
-                <input type="checkbox" class="category-checkbox" id="junshi-Checkbox" data-category="C" data-value="1"value="軍事"> 軍事
+                <input type="checkbox" class="category-checkbox" id="junshi-Checkbox" data-category="C" value="軍事"> 軍事
             </label>
             <label class="category-button"> 
-                <input type="checkbox" class="category-checkbox" id="wenhua-Checkbox" data-category="C" data-value="1"value="文化娛樂"> 文化娛樂
+                <input type="checkbox" class="category-checkbox" id="wenhua-Checkbox" data-category="C" value="文化娛樂"> 文化娛樂
             </label>
             <label class="category-button"> 
-                <input type="checkbox" class="category-checkbox" id="jiaotong-Checkbox" data-category="C" data-value="1"value="交通運輸"> 交通運輸
+                <input type="checkbox" class="category-checkbox" id="jiaotong-Checkbox" data-category="C" value="交通運輸"> 交通運輸
             </label>
             <label class="category-button"> 
-                <input type="checkbox" class="category-checkbox" id="nongye-Checkbox" data-category="C" data-value="1"value="農業生產"> 農業生產
+                <input type="checkbox" class="category-checkbox" id="nongye-Checkbox" data-category="C" value="農業生產"> 農業生產
             </label>
             <label class="category-button"> 
-                <input type="checkbox" class="category-checkbox" id="yinshi-Checkbox" data-category="C" data-value="1"value="飲食"> 飲食
+                <input type="checkbox" class="category-checkbox" id="yinshi-Checkbox" data-category="C" value="飲食"> 飲食
             </label>
             
         </div>
@@ -231,29 +246,29 @@
 
     <div class="subcategory-container" id="areaCategoryContainer">  
         <label class="category-button">
-            <input type="checkbox" class="category-checkbox category-select-all" data-category="E"data-value="1"> 全选
+            <input type="checkbox" class="category-checkbox category-select-all" data-category="E"> 全选
        </label>
         <label class="category-button">
             <input type="checkbox" class="category-checkbox" id="asiaButton" data-category="E" onclick="toggleAsiaContainer()">亞洲
         </label>
         <div class="asia-container" id="asiaContainer">
         <label class="asia-button"> 
-            <input type="checkbox" class="category-checkbox" id="zhong-Checkbox" data-category="E" data-value="1"value="中亞"> 中亞 
+            <input type="checkbox" class="category-checkbox" id="zhong-Checkbox" data-category="E" value="中亞"> 中亞 
         </label>
         <label class="asia-button"> 
-            <input type="checkbox" class="category-checkbox" id="xi-Checkbox" data-category="E" data-value="1"value="西亞"> 西亞 
+            <input type="checkbox" class="category-checkbox" id="xi-Checkbox" data-category="E" value="西亞"> 西亞 
         </label>
         <label class="asia-button"> 
-            <input type="checkbox" class="category-checkbox" id="na-Checkbox" data-category="E"data-value="1" value="南亞"> 南亞 
+            <input type="checkbox" class="category-checkbox" id="na-Checkbox" data-category="E" value="南亞"> 南亞 
         </label>
         <label class="asia-button"> 
-            <input type="checkbox" class="category-checkbox" id="dongnan-Checkbox" data-category="E"data-value="1" value="東南亞"> 東南亞 
+            <input type="checkbox" class="category-checkbox" id="dongnan-Checkbox" data-category="E" value="東南亞"> 東南亞 
         </label>
         <label class="asia-button"> 
-            <input type="checkbox" class="category-checkbox" id="dong-Checkbox" data-category="E"data-value="1" value="東亞"> 東亞 
+            <input type="checkbox" class="category-checkbox" id="dong-Checkbox" data-category="E" value="東亞"> 東亞 
         </label>
         <label class="asia-button"> 
-            <input type="checkbox" class="category-checkbox" id="bei-Checkbox" data-category="E" data-value="1"value="北亞"> 北亞 
+            <input type="checkbox" class="category-checkbox" id="bei-Checkbox" data-category="E" value="北亞"> 北亞 
         </label>
         </div>
 
@@ -287,11 +302,11 @@
 
     <script src="/script/site.js"></script>
     <script src="/script/script.js"></script>
-    <script src="/script/move.js"></script>
+    <!-- <script src="/script/move.js"></script> -->
     <!-- <script src="/script/time.js"></script>  -->
     <script src="/script/dogMove.js"></script>
     <script src="/script/lionMove.js"></script>
-    <script src="/script/catMove.js"></script>
+    <!-- <script src="/script/catMove.js"></script> -->
     <script src="/script/camelMove.js"></script>
     
     

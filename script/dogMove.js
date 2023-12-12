@@ -1,6 +1,5 @@
 
-
-markers.dog1 = createMarker({ lat:	30.0454 ,lng:31.2457}, 'dog','埃及開羅',{ A:['dog'], B:['史前至夏商周'],C:['宗教信仰'],D:[''],E:['非洲'] }
+markers.dog1 = createMarker({ lat:	30.0444 ,lng:31.2357}, 'dog','埃及開羅',{ A:['dog'], B:['史前至夏商周'],C:['宗教信仰'],D:[''],E:['非洲'] }
    ,{  title: '描述',
        description: '生有翅膀的獅子是古代中東地區的典型神獸形象，古埃及的斯芬克斯就是這樣一種神獸。斯芬克斯有一對翅膀、獅子的身體和人的頭。位於埃及吉薩的獅身人面像，因其被視為古代世界七大奇跡之一，而可能是世界上最著名的斯芬克斯雕像了。'
        ,reference:'1. 尚永琪，《蓮花上的獅子——圖說歐亞獅子文化》（香港：中華書局，2015），頁36-38。<br>&emsp;&emsp;&emsp;2. Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur, UNESCO World Heritage Convention Webstie, whc.unesco.org/zh/list/86.'
@@ -24,21 +23,21 @@ markers.dog3 = createMarker({ lat:	25.3176	,lng:82.9739 }, 'dog','印度瓦拉�
 	,image:'media/dog/214 Capital of Ashokan pillar.jpg'
 	,referenceUrl:''});
 
-markers.dog4 = createMarker({ lat:	36.2628	,lng:54.2338 }, 'dog','伊朗達姆甘',{ A:['dog'], B:['秦漢'],C:['朝貢'],D:['陸上絲綢之路'],E:['西亞'] },
+markers.dog4 = createMarker({ lat:	36.1628	,lng:54.3338 }, 'dog','伊朗達姆甘',{ A:['dog'], B:['秦漢'],C:['朝貢'],D:['陸上絲綢之路'],E:['西亞'] },
    {title: '描述'  
 	,description:'獅子不是中國的原生物種，其傳入依靠的是西域國家的朝貢。章和元年（公元87年），安息（今伊朗）國王遣使向東漢進貢獅子，這是中國史書中最早的關於貢獅的明確記載。此後，永元十三年（公元101年），安息再次向東漢進貢獅子和鴕鳥。'  
 	,reference:'1. 范曄，《後漢書·西域傳第七十八》（北京：中華書局，1997），頁2918。'  
 	,image:''
 	,referenceUrl:''});//河南洛阳
 
-markers.dog5 = createMarker({ lat:	39.5723	,lng:75.7893 }, 'dog','新疆喀什',{ A:['dog'], B:['秦漢'],C:['朝貢'],D:['陸上絲綢之路'],E:['東亞'] },
+markers.dog5 = createMarker({ lat:	39.4723	,lng:75.9893 }, 'dog','新疆喀什',{ A:['dog'], B:['秦漢'],C:['朝貢'],D:['陸上絲綢之路'],E:['東亞'] },
    {title: '描述'  
 	,description:'陽嘉二年（公元133年），疏勒國（今新疆喀什）向東漢進貢獅子和瘤牛。'  
 	,reference:'1. 范曄，《後漢書·西域傳第七十八》（北京：中華書局，1997），頁2927。'  
 	,image:''
 	,referenceUrl:''});//河南洛阳
 
-markers.dog6 = createMarker({ lat:	36.4580	,lng:66.9966 }, 'dog','阿富汗巴爾赫',{ A:['dog'],B:['秦漢'],C:['朝貢'],D:['陸上絲綢之路'],E:['西亞'] },
+markers.dog6 = createMarker({ lat:	36.7580	,lng:66.8966 }, 'dog','阿富汗巴爾赫',{ A:['dog'],B:['秦漢'],C:['朝貢'],D:['陸上絲綢之路'],E:['西亞'] },
    {title: '描述'  
 	,description:'章和元年（公元87年），大月氏（今阿富汗）向東漢進貢獅子。'  
 	,reference:'1. 范曄，《後漢書·肅宗孝章帝紀第三》（北京：中華書局，1997），頁158。'  
@@ -239,18 +238,6 @@ markers.dog34 = createMarker({ lat:	-25.9682 ,lng:	32.5729 }, 'dog','莫桑比�
     ,reference:'1. 鄒振環，〈康熙朝西人貢獅與《獅子說》〉，《紫禁城》，期10（2018年10月），頁42,48。'  
     ,image:''
 	,referenceUrl:''});//印度果阿，中國澳門，北京
-   
-   
-   
-    //    markers.elephant1 = createMarker({ lat: 33.123, lng: 108.456 }, 'elephant');
-    //    markers.elephant2 = createMarker({ lat: 33.124, lng: 108.456 }, 'elephant');
-    //    markers.elephant3 = createMarker({ lat: 33.125, lng: 108.456 }, 'elephant');
-    //    markers.elephant4 = createMarker({ lat: 33.126, lng: 108.456 }, 'elephant');
-   
-   
-   
-
-
 
     // 获取图标和 category-container 的引用
 // 获取图标和 category-container 的引用
@@ -358,128 +345,49 @@ var taihai={lat:24.2877,lng:119.5445};
 var zhangjiagang={lat:31.8774,lng:120.4609}
 
 
-var dog4Position = dog4.getPosition();
-var initialCoords_dog4 = {
-    lat: dog4Position.lat(),
-    lng: dog4Position.lng()
-};
-var dog5Position = dog5.getPosition();
-var initialCoords_dog5 = {
-    lat: dog5Position.lat(),
-    lng: dog5Position.lng()
-};
-var dog6Position = dog6.getPosition();
-var initialCoords_dog6 = {
-    lat: dog6Position.lat(),
-    lng: dog6Position.lng()
-};
-var dog11Position = dog11.getPosition();
-var initialCoords_dog11 = {
-    lat: dog11Position.lat(),
-    lng: dog11Position.lng()
-};
+function getInitialCoords(dog) {
+    const position = dog.getPosition();
+    return {
+        lat: position.lat(),
+        lng: position.lng()
+    };
+}
 
-var dog13Position = dog13.getPosition();
-var initialCoords_dog13 = {
-    lat: dog13Position.lat(),
-    lng: dog13Position.lng()
-};
-var dog14Position = dog14.getPosition();
-var initialCoords_dog14 = {
-    lat: dog14Position.lat(),
-    lng: dog14Position.lng()
-};
-var dog15Position = dog15.getPosition();
-var initialCoords_dog15 = {
-    lat: dog15Position.lat(),
-    lng: dog15Position.lng()
-};
-var dog16Position = dog16.getPosition();
-var initialCoords_dog16 = {
-    lat: dog16Position.lat(),
-    lng: dog16Position.lng()
-};
-var dog17Position = dog17.getPosition();
-var initialCoords_dog17 = {
-    lat: dog17Position.lat(),
-    lng: dog17Position.lng()
-};
-var dog18Position = dog18.getPosition();
-var initialCoords_dog18 = {
-    lat: dog18Position.lat(),
-    lng: dog18Position.lng()
-};
+var initialCoords_dog4 = getInitialCoords(dog4);
+var initialCoords_dog5 = getInitialCoords(dog5);
+var initialCoords_dog6 = getInitialCoords(dog6);
+var initialCoords_dog11 = getInitialCoords(dog11);
+var initialCoords_dog13 = getInitialCoords(dog13);
+var initialCoords_dog14 = getInitialCoords(dog14);
+var initialCoords_dog15 = getInitialCoords(dog15);
+var initialCoords_dog16 = getInitialCoords(dog16);
+var initialCoords_dog17 = getInitialCoords(dog17);
+var initialCoords_dog18 = getInitialCoords(dog18);
 var initialCoords_dog22 = dog22.getPosition(); // 存储初始位置
-var dog23Position = dog23.getPosition();
-var initialCoords_dog23 = {
-    lat: dog23Position.lat(),
-    lng: dog23Position.lng()
-};
-var dog24Position = dog24.getPosition();
-var initialCoords_dog24 = {
-    lat: dog24Position.lat(),
-    lng: dog24Position.lng()
-};
-
-
+var initialCoords_dog23 = getInitialCoords(dog23);
+var initialCoords_dog24 = getInitialCoords(dog24);
 var initialCoords_dog27 = dog27.getPosition(); 
-
 var initialCoords_dog28 = dog28.getPosition(); // 存储初始位置
-
-var dog29Position = dog29.getPosition();
-var initialCoords_dog29 = {
-    lat: dog29Position.lat(),
-    lng: dog29Position.lng()
-};
-var dog30Position = dog30.getPosition();
-var initialCoords_dog30 = {
-    lat: dog30Position.lat(),
-    lng: dog30Position.lng()
-};
-var dog31Position = dog31.getPosition();
-var initialCoords_dog31 = {
-    lat: dog31Position.lat(),
-    lng: dog31Position.lng()
-};
-var dog32Position = dog32.getPosition();
-var initialCoords_dog32 = {
-    lat: dog32Position.lat(),
-    lng: dog32Position.lng()
-};
-var dog33Position = dog33.getPosition();
-var initialCoords_dog33 = {
-    lat: dog33Position.lat(),
-    lng: dog33Position.lng()
-};
-
-var dog34Position = dog34.getPosition(); // 存储初始位置
-var initialCoords_dog34 = {
-    lat: dog34Position.lat(),
-    lng: dog34Position.lng()
-};
-
-
-
-var timeoutId = null;
-
+var initialCoords_dog29 = getInitialCoords(dog29);
+var initialCoords_dog30 = getInitialCoords(dog30);
+var initialCoords_dog31 = getInitialCoords(dog31);
+var initialCoords_dog32 = getInitialCoords(dog32);
+var initialCoords_dog33 = getInitialCoords(dog33);
+var initialCoords_dog34 = getInitialCoords(dog34);
 
 // 添加滑块值变化的事件监听器
 slider.addEventListener('input', function() {
-    // 获取滑块的当前值
-    var currentValue = parseInt(slider.value);
-    // 显示标记
-    function toggleMarkers(showList, hideList) {
-        showList.forEach(function(marker) {
-            if (filteredMarkers.includes(marker)) {
-                marker.setMap(map);
-            }
-        });
     
-        hideList.forEach(function(marker) {
-            marker.setMap(null);
-        });
-    }
+    
+   
     //史前
+    if (currentValue<=0)
+    {
+        toggleMarkers([dog1, dog2, dog3,dog4, dog5, dog6,dog7, dog8, dog9, dog10, dog11, dog12, dog13, dog14, dog15, dog16, dog17, dog18, dog19, dog20, dog21, dog22, dog23, dog24, dog25, dog26, dog27, dog28, dog29, dog30, dog31, dog32, dog33, dog34],[]);
+    
+        
+     
+    }
     if(currentValue>0&&currentValue<1000)
     {
         toggleMarkers([dog1, dog2, dog3], 
@@ -1020,9 +928,9 @@ slider.addEventListener('input', function() {
      
         dog34.setPosition({ lat: interpolatedLat_34, lng: interpolatedLng_34 });     
     }
-    if(currentValue==9000){
-        dog34.setPosition(newCoords_dog34_3);
-    }
+    // if(currentValue>=8998){
+    //     dog34.setPosition(newCoords_dog34_3);
+    // }
     // }if(currentValue==1000||currentValue==2000||currentValue==3000||currentValue==4000||currentValue==5000||currentValue==6000||currentValue==7000||currentValue==8000){
     //     dog34.setPosition(initialCoords_dog34);
     // }
@@ -1032,20 +940,27 @@ slider.addEventListener('input', function() {
     if(currentValue==1||currentValue==1000||currentValue==2000||currentValue==3000||currentValue==4000||currentValue==5000||currentValue==6000||currentValue==7000||currentValue==8000||currentValue==9000){
     //markerCluster.clearMarkers(); // 清除所有标记
     
-    markerCluster.removeMarker();
+    // markerCluster.removeMarker();
 
-    // // 将所有标记重新添加到MarkerClusterer中
-    //markerCluster.addMarkers([dog4, dog5, dog6, dog11, dog13, dog14, dog15, dog16, dog17, dog18, dog22, dog23, dog24, dog27, dog28, dog29, dog30, dog31, dog32, dog33, dog34]);
-    markerCluster.addMarkers([dog4, dog5, dog6, dog11, dog13, dog14, dog15, dog16, dog17, dog18, dog22, dog23, dog24, dog27, dog28, dog29, dog30, dog31, dog32, dog33, dog34,markers.dog1,markers.dog2,markers.dog3,markers.dog7,markers.dog8,markers.dog9,markers.dog10,markers.dog12,markers.dog19,markers.dog20,markers.dog21,markers.dog25,markers.dog26,]);
+    // // // 将所有标记重新添加到MarkerClusterer中
+    // //markerCluster.addMarkers([dog4, dog5, dog6, dog11, dog13, dog14, dog15, dog16, dog17, dog18, dog22, dog23, dog24, dog27, dog28, dog29, dog30, dog31, dog32, dog33, dog34]);
+    // markerCluster.addMarkers([dog4, dog5, dog6, dog11, dog13, dog14, dog15, dog16, dog17, dog18, dog22, dog23, dog24, dog27, dog28, dog29, dog30, dog31, dog32, dog33, dog34,markers.dog1,markers.dog2,markers.dog3,markers.dog7,markers.dog8,markers.dog9,markers.dog10,markers.dog12,markers.dog19,markers.dog20,markers.dog21,markers.dog25,markers.dog26,]);
     
 }
-    
+
+
 //updateMarkerCluster(currentValue);
+
+
+  
+
 
 
     // document.getElementById('current-year').textContent = 'Year: ' + currentValue;
 
+
 });
+
 
 
 var infowindows = {};

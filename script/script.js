@@ -1,6 +1,6 @@
 // 图标信息
 var iconInfo = {
-    camel: { url: '/media/animal_icon/camel.PNG', scaledSize: new google.maps.Size(25, 25)},
+    camel: { url: '/media/animal_icon/camel.PNG', scaledSize: new google.maps.Size(30, 30)},
     cat: { url: '/media/animal_icon/cat2.png',scaledSize: new google.maps.Size(25,25) },
     dog: { url: '/media/animal_icon/dog2.png', scaledSize: new google.maps.Size(25, 25) },
     rhino: { url: '/media/animal_icon/rhino.png' },
@@ -40,30 +40,31 @@ function initMap() {
         // language:'zh_HK'
     });
 
+
+    var currentZoom = map.getZoom();
+    console.log('当前缩放级别1：', currentZoom);
+
     map.set('styles', mapstyle);
-    document.getElementById('zoomInButton').addEventListener('click', function() {
+    document.getElementById('zoomInButton').addEventListener('click', function () {
         var currentZoom = map.getZoom();
-        var zoomLevels = [2, 3, 5, 12];
-        var currentIndex = zoomLevels.indexOf(currentZoom);
-        var nextIndex = (currentIndex + 1) % zoomLevels.length;
-        var nextZoom = zoomLevels[nextIndex];
+        var zoomLevels = [2, 3, 5, 8,12];
+        var nextZoom = zoomLevels.find(level => level > currentZoom) || zoomLevels[zoomLevels.length - 1];
         var maxZoom = map.maxZoom;
-        if (currentZoom !== nextZoom&&currentZoom<maxZoom) {
+        if (currentZoom !== nextZoom && currentZoom < maxZoom) {
             map.setZoom(nextZoom);
         }
     });
-
-    document.getElementById('zoomOutButton').addEventListener('click', function() {
+    
+    document.getElementById('zoomOutButton').addEventListener('click', function () {
         var currentZoom = map.getZoom();
-        var zoomLevels = [2, 3,5, 12];
-        var currentIndex = zoomLevels.indexOf(currentZoom);
-        var prevIndex = (currentIndex - 1 + zoomLevels.length) % zoomLevels.length;
-        var prevZoom = zoomLevels[prevIndex];
+        var zoomLevels = [2, 3, 5, 8,12];
+        var prevZoom = zoomLevels.slice().reverse().find(level => level < currentZoom) || zoomLevels[0];
         var minZoom = map.minZoom;
-        if (currentZoom !== prevZoom&&currentZoom>minZoom) {
+        if (currentZoom !== prevZoom && currentZoom > minZoom) {
             map.setZoom(prevZoom);
         }
     });
+    
 
 
     
@@ -120,7 +121,8 @@ function initMap() {
    
     google.maps.event.addListener(map, 'zoom_changed', function() {
         var currentZoom = map.getZoom();
-        var zoomLevels = [2, 3, 5, 12];
+        if  (currentZoom==2||currentZoom==3||currentZoom==5||currentZoom==8||currentZoom==12){
+        var zoomLevels = [2, 3, 5, 8,12];
         var currentIndex = zoomLevels.indexOf(currentZoom);
         //console.log('currentIndex', currentIndex);
        
@@ -128,10 +130,11 @@ function initMap() {
    
         zoomSlider.value=currentIndex;
         console.log('当前缩放级别：', currentZoom);
+        }
     });
     zoomSlider.addEventListener('input',function(){
-    
-        var zoomLevels = [2, 3, 5, 12];
+
+        var zoomLevels = [2, 3, 5, 8,12];
         var currentZoom = parseInt(zoomSlider.value); // 获取滑块的值并转换为数字类型
         var targetZoom = zoomLevels[currentZoom]; // 获取对应的缩放级别
         
@@ -211,54 +214,57 @@ function showTab(tabName) {
 // 在页面加载后的初始化
 
 
-handleCheckboxChange('land-Checkbox', '陸上絲綢之路');
-handleCheckboxChange('ocean-Checkbox', '海上絲綢之路');
+const checkboxList = [
+    { id: 'land-Checkbox', value: '陸上絲綢之路' },
+    { id: 'ocean-Checkbox', value: '海上絲綢之路' },
+    { id: '其他-Checkbox', value: '其他' },
+
+    { id: 'camel-Checkbox', value: 'camel' },
+    { id: 'cat-Checkbox', value: 'cat' },
+    { id: 'dog-Checkbox', value: 'dog' },
+    { id: 'rhino-Checkbox', value: 'rhino' },
+    { id: 'leopard-Checkbox', value: 'leopard' },
+    { id: 'lion-Checkbox', value: 'lion' },
+    { id: 'elephant-Checkbox', value: 'elephant' },
+    { id: 'banma-Checkbox', value: 'zebra' },
+    { id: 'changjinglu-Checkbox', value: 'giraffe' },
 
 
-handleCheckboxChange('camel-Checkbox', 'camel');
-handleCheckboxChange('cat-Checkbox', 'cat');
-handleCheckboxChange('dog-Checkbox', 'dog');
-handleCheckboxChange('rhino-Checkbox', 'rhino');
-handleCheckboxChange('leopard-Checkbox', 'leopard');
-handleCheckboxChange('lion-Checkbox', 'lion');
-handleCheckboxChange('elephant-Checkbox', 'elephant');
+    { id: 'xia-Checkbox', value: '史前至夏商周' },
+    { id: 'qinhan-Checkbox', value: '秦漢' },
+    { id: 'sanguo-Checkbox', value: '三國兩晉南北朝' },
+    { id: 'sui-Checkbox', value: '隋' },
+    { id: 'tang-Checkbox', value: '唐' },
+    { id: 'song-Checkbox', value: '宋' },
+    { id: 'yuan-Checkbox', value: '元' },
+    { id: 'ming-Checkbox', value: '明' },
+    { id: 'qing-Checkbox', value: '清' },
 
-handleCheckboxChange('xia-Checkbox', '史前至夏商周');
-handleCheckboxChange('qinhan-Checkbox', '秦漢');
-handleCheckboxChange('sanguo-Checkbox', '三國兩晉南北朝');
-handleCheckboxChange('sui-Checkbox', '隋');
-handleCheckboxChange('tang-Checkbox', '唐');
-handleCheckboxChange('song-Checkbox', '宋');
-handleCheckboxChange('yuan-Checkbox', '元');
-handleCheckboxChange('ming-Checkbox', '明');
-handleCheckboxChange('qing-Checkbox', '清');
+    { id: 'zongjiao-Checkbox', value: '宗教信仰' },
+    { id: 'chaogong-Checkbox', value: '朝貢' },
+    { id: 'shenfen-Checkbox', value: '身份象徵' },
+    { id: 'junshi-Checkbox', value: '軍事' },
+    { id: 'wenhua-Checkbox', value: '文化娛樂' },
+    { id: 'jiaotong-Checkbox', value: '交通運輸' },
+    { id: 'nongye-Checkbox', value: '農業生產' },
+    { id: 'yinshi-Checkbox', value: '飲食' },
 
-handleCheckboxChange('zongjiao-Checkbox', '宗教信仰');
-handleCheckboxChange('chaogong-Checkbox', '朝貢');
-handleCheckboxChange('shenfen-Checkbox', '身份象徵');
-handleCheckboxChange('junshi-Checkbox', '軍事');
-handleCheckboxChange('wenhua-Checkbox', '文化娛樂');
-handleCheckboxChange('jiaotong-Checkbox', '交通運輸');
-handleCheckboxChange('nongye-Checkbox', '農業生產');
-handleCheckboxChange('yinshi-Checkbox', '飲食');
+    { id: 'zhong-Checkbox', value: '中亞' },
+    { id: 'nan-Checkbox', value: '南亞' },
+    { id: 'xi-Checkbox', value: '西亞' },
+    { id: 'bei-Checkbox', value: '北亞' },
+    { id: 'dong-Checkbox', value: '東亞' },
+    { id: 'dongnan-Checkbox', value: '東南亞' },
+    { id: 'feizhou-Checkbox', value: '非洲' },
+    { id: 'ouzhou-Checkbox', value: '歐洲' },
+    { id: 'meizhou-Checkbox', value: '美洲' },
+    { id: 'dayagnzhou-Checkbox', value: '大洋洲' },
+    { id: 'xiyu-Checkbox', value: '古代西域' }
+];
 
-handleCheckboxChange('zhong-Checkbox', '中亞');
-handleCheckboxChange('nan-Checkbox', '南亞');
-handleCheckboxChange('xi-Checkbox', '西亞');
-handleCheckboxChange('bei-Checkbox', '北亞');
-handleCheckboxChange('dong-Checkbox', '東亞');
-handleCheckboxChange('dongnan-Checkbox', '東南亞');
-handleCheckboxChange('feizhou-Checkbox', '非洲');
-handleCheckboxChange('ouzhou-Checkbox', '歐洲');
-handleCheckboxChange('meizhou-Checkbox', '美洲');
-handleCheckboxChange('dayagnzhou-Checkbox', '大洋洲');
-handleCheckboxChange('xiyu-Checkbox', '古代西域');
-
-
-
-
-
-
+checkboxList.forEach(item => {
+    handleCheckboxChange(item.id, item.value);
+});
 
 
 var categoryToggleIcon = $('#toggle');
@@ -529,7 +535,7 @@ var toggleIcon = document.getElementById('toggle');
 // 获取整个.category-container
 var categoryContainer = document.querySelector('.category-container');
 
-// 添加点击事件处理程序
+// 点击收起容器icon
 
 toggleIcon.addEventListener('click', function() {
     if (categoryContainer.style.display === 'flex' || categoryContainer.style.display === '') {
@@ -537,7 +543,7 @@ toggleIcon.addEventListener('click', function() {
         toggleIcon.style.left = '0'; // 将图标移动到屏幕的左边缘
     } else {
         categoryContainer.style.display = 'flex';
-        toggleIcon.style.left = '10%'; // 将图标移动回初始位置
+        toggleIcon.style.left = '15%'; // 将图标移动回初始位置
     }
 });
 
@@ -557,6 +563,20 @@ controlImage.addEventListener('click', function() {
         clearInterval(intervalId);
         intervalId = null;
         controlImage.src = 'media/animal_icon/dog.png'; // 切换回播放图片
+    }
+});
+document.body.addEventListener('keydown', function(event) {
+    if (event.code === 'Space' && document.activeElement === document.body) {
+        if (intervalId === null) {
+            // 如果 intervalId 为 null，表示当前是停止状态，需要开始自动拖动
+            controlImage.src = 'media/animal_icon/leopard.png'; // 切换到暂停图片
+            intervalId = setInterval(autoSlide, 1); // 每隔 50 毫秒自动拖动一次
+        } else {
+            // 否则，当前是运行状态，需要停止自动拖动
+            clearInterval(intervalId);
+            intervalId = null;
+            controlImage.src = 'media/animal_icon/dog.png'; // 切换回播放图片
+        }
     }
 });
 
@@ -584,7 +604,7 @@ function autoSlide() {
 slider.addEventListener('input', function() {
     currentValue = parseInt(slider.value);
 });
-
+//获取亚洲地区的容器
 function toggleAsiaContainer() {
     var asiaContainer = document.getElementById('asiaContainer'); // 获取亚洲地区的容器
     var asiaCheckboxes = asiaContainer.querySelectorAll('.category-checkbox'); // 获取亚洲地区的子复选框
@@ -606,7 +626,7 @@ function toggleAsiaContainer() {
     filterMarkers();
 }
 
-
+    // 打开新窗口
 document.getElementById('openWindow').addEventListener('click', function(event) {
     event.preventDefault(); // 阻止默认行为，即不打开链接
   
@@ -616,7 +636,7 @@ document.getElementById('openWindow').addEventListener('click', function(event) 
   
 
 
-
+// 全选复选框点击事件
 $(document).ready(function() {
     // 全选复选框点击事件
     $('.category-select-all').click(function() {
@@ -803,7 +823,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // 获取所有复选框
 var checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
-// 为每个复选框添加更改事件监听器
+// 为每个复选框添加更改事件监听器暂停播放
 checkboxes.forEach(function(checkbox) {
     checkbox.addEventListener('change', function() {
        
@@ -816,7 +836,7 @@ checkboxes.forEach(function(checkbox) {
                            
     });
 });
-
+//复选框全选
 function handleCheckboxContainer(containerId) {
     const checkboxContainer = document.getElementById(containerId);
     const selectAllCheckbox = checkboxContainer.querySelector('.category-select-all');
@@ -844,7 +864,7 @@ handleCheckboxContainer('areaCategoryContainer');
 //         checkbox.checked = true;
 //     });
 // });
-
+//复选框容器隐藏
 function toggleContainer(containerId) {
     var container = document.getElementById(containerId);
     if (container.style.display === 'none') {
@@ -853,3 +873,20 @@ function toggleContainer(containerId) {
         container.style.display = 'none';
     }
 }
+
+var currentValue = parseInt(slider.value);
+// 滑块显示标记
+function toggleMarkers(showList, hideList) {
+    showList.forEach(function(marker) {
+        if (filteredMarkers.includes(marker)) {
+            marker.setMap(map);
+        }
+    });
+
+    hideList.forEach(function(marker) {
+        marker.setMap(null);
+    });
+}
+
+
+

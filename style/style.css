@@ -89,7 +89,7 @@ body {
 .category-container {
     position: relative;
     display: flex;
-    width: 10%;
+    width: 15%;
     flex-direction: column;
     
     justify-content: space-between;
@@ -145,7 +145,7 @@ body {
 .toggle-icon {
     position: absolute;
     top: 50%; /* 将图标垂直居中 */
-    left: 10%; /* 放置在右侧 */
+    left: 15%; /* 放置在右侧 */
     transform: translateY(-50%); /* 使其垂直居中 */
     width: 50px;
     height: 50px;
@@ -166,7 +166,7 @@ body {
 
     /* 单个分类按钮样式 */
     .category-button {
-        background-color: #e422d7;
+        background-color: #dff39d;
         border: none;
         /* padding: 10px 20px; */
         margin: 2px;
@@ -361,10 +361,11 @@ body {
 }
 
 .vertical-slider {
-    appearance: slider-vertical; /* 垂直滑块 */
+    appearance: slider-vertical;
     width: 100%;
     height: 100%;
-    
-    transform-origin: right top;
+    /* padding: 0px; 调整内部填充，使按钮在轴内部 */
+    /* position: relative; */
+    /* transform-origin: right top; */
    
 }

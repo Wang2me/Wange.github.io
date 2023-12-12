@@ -2,7 +2,7 @@ window.onload = function() {
 
     initMap();
     
-markers.lion1 = createMarker({ lat:	30.0444 ,lng:31.2357}, 'lion','埃及開羅',{ A:['lion'], B:['史前至夏商周'],C:['宗教信仰'],D:[''],E:['非洲'] }
+markers.lion1 = createMarker({ lat:	30.0444 ,lng:31.2357}, 'lion','埃及開羅',{ A:['lion'], B:['史前至夏商周'],C:['宗教信仰'],D:['其他'],E:['非洲'] }
    ,{  title: '描述',
        description: '生有翅膀的獅子是古代中東地區的典型神獸形象，古埃及的斯芬克斯就是這樣一種神獸。斯芬克斯有一對翅膀、獅子的身體和人的頭。位於埃及吉薩的獅身人面像，因其被視為古代世界七大奇跡之一，而可能是世界上最著名的斯芬克斯雕像了。'
        ,reference:'1. 尚永琪，《蓮花上的獅子——圖說歐亞獅子文化》（香港：中華書局，2015），頁36-38。<br>&emsp;&emsp;&emsp;2. Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur, UNESCO World Heritage Convention Webstie, whc.unesco.org/zh/list/86.'
@@ -11,7 +11,7 @@ markers.lion1 = createMarker({ lat:	30.0444 ,lng:31.2357}, 'lion','埃及開羅'
     });
 
 
-markers.lion2 = createMarker({ lat:	37.8201	,lng:22.6513}, 'lion','希臘尼米亞',{ A:['lion'], B:['史前至夏商周'],C:['宗教信仰'],D:[''],E:['歐洲'] },
+markers.lion2 = createMarker({ lat:	37.8201	,lng:22.6513}, 'lion','希臘尼米亞',{ A:['lion'], B:['史前至夏商周'],C:['宗教信仰'],D:['其他'],E:['歐洲'] },
    {title: '描述'  
 	,description:'海格力斯是古希臘神話中的半神半英雄，他曾經完成了十二件被稱為｢不可能完成｣的偉績，其中第一件就是殺死尼米亞的獅子。在伯羅奔尼撒，海格力斯殺死了獅子並獲得了它的皮毛。由是，｢海格力斯和尼米亞獅子｣成為了歐洲文化中讚美英雄的武力的典型形象。例如，在這件古希臘的雙耳陶罐上就出現了描繪了海格力斯與獅子搏鬥場景的繪畫。這件陶罐的年代大約為公元前540年，現存於美國紐約大都會博物館。'  
 	,reference:'1. Madeleine, "What were the 12 Labors of Hercules?", THEOI Greek Methology website, (13 September 2019), www.theoi.com/articles/what-were-the-12-labors-of-hercules/.<br>&emsp;&emsp;&emsp;2. Terracotta amphora (jar), The Metropolitan Museum of Art Website, www.metmuseum.org/art/collection/search/253608.'  
@@ -19,7 +19,7 @@ markers.lion2 = createMarker({ lat:	37.8201	,lng:22.6513}, 'lion','希臘尼米�
 	,referenceUrl:''
     });
 
-markers.lion3 = createMarker({ lat:	25.3176	,lng:82.9739 }, 'lion','印度瓦拉納西',{ A:['lion'], B:['史前至夏商周'],C:['宗教信仰'],D:[''],E:['南亞']},
+markers.lion3 = createMarker({ lat:	25.3176	,lng:82.9739 }, 'lion','印度瓦拉納西',{ A:['lion'], B:['史前至夏商周'],C:['宗教信仰'],D:['其他'],E:['南亞']},
    {title: '描述'  
 	,description:'獅子在佛教文化中有著神聖的意義。據說，佛祖釋迦牟尼的化身之一就是獅子。在公元前三世紀，印度孔雀王朝的第三位君主阿育王崇尚佛教，他在佛教聖地鹿野苑建造了許多雕刻著獅子的石柱，象徵著佛法的傳播。'  
 	,reference:'1. 尚永琪，《蓮花上的獅子——圖說歐亞獅子文化》（香港：中華書局，2015），頁36-38。<br>&emsp;&emsp;&emsp;2. Capital of Ashokan pillar, Archaeological Museum Sarnath Website, www.sarnathmuseumasi.org/gallery/Gallery3%20Acc%20No%20355.html.'  
@@ -64,8 +64,9 @@ markers.lion8 = createMarker({ lat:	40.1130	,lng:94.6618 },'lion','甘肅敦煌'
 markers.lion9 = createMarker({ lat:	15.8801	,lng:108.338 }, 'lion','越南會安',{ A:['lion'],B:['三國兩晉南北朝'],C:['軍事'],D:['陸上絲綢之路'],E:['東南亞'] },
    {title: '描述'  
 	,description:'林邑是位於越南中部地區的古國。南朝宋曾經派遣檀和之和宗愨討伐林邑，林邑以披著鎧甲的大象抵禦。宗愨認為獅子威服百獸，於是下令製作了大量的獅子模型。林邑的大象部隊受驚而潰散，林邑的首都被攻克。'  
-	,reference:''  
-	,imag:'1. 沈約，《宋書·列傳第三十六》（北京：中華書局，1997），頁1971-1972。'});
+	,reference:'1. 沈約，《宋書·列傳第三十六》（北京：中華書局，1997），頁1971-1972。'  
+	,imag:''
+    ,referenceUrl:''});
 
 markers.lion10 = createMarker({ lat:	34.6364	,lng:   112.4501 }, 'lion','河南洛陽',{ A:['lion'],B:['三國兩晉南北朝'],C:['宗教信仰'],D:['陸上絲綢之路'],E:['東亞'] },
    {title: '描述'  
@@ -137,14 +138,14 @@ markers.lion19 = createMarker({ lat:	53.7175	,lng:	91.4292 }, 'lion','俄羅斯�
 	,image:''
 	,referenceUrl:''});
 
-markers.lion20 = createMarker({ lat:	34.7973	,lng:	114.3072 }, 'lion','河南開封',{ A:['lion'],B:['宋' ],C:['文化娛樂'],D:[''],E:['東亞']},
+markers.lion20 = createMarker({ lat:	34.7973	,lng:	114.3072 }, 'lion','河南開封',{ A:['lion'],B:['宋' ],C:['文化娛樂'],D:['其他'],E:['東亞']},
    {title: '描述'  
 	,description:'根據《東京夢華錄》記載，宋代元宵節的戲曲表演中，有｢舞獅豹｣一節。可見舞獅在宋代已經成為中國文化中流行的節慶活動。宋代宮廷畫家蘇漢臣所繪的《百子嬉春圖》，其內容為春節期間兒童進行娛樂活動的場景，其中的獅子是兩名孩童扮成的，有著綠色的鬃毛和藍色的皮膚，其形象已經很接近現在的舞獅。'  
 	,reference:'1. 孟元老，《東京夢華錄·卷七》（上海：商務印書館據學津討源本影印，1936），頁138-139。<br>&emsp;&emsp;&emsp;2. 宋人百子嬉春頁，故宮博物院網站，www.dpm.org.cn/collection/paint/231547。'  
 	,image:'media/lion/231 苏汉臣百子嬉春.png'
 	,referenceUrl:''});
 
-markers.lion21 = createMarker({ lat:	34.7970	,lng:	114.3077 }, 'lion','河南開封',{ A:['lion'],B:['宋'],C:['宗教信仰'],D:[''],E:['東亞'] },
+markers.lion21 = createMarker({ lat:	34.7970	,lng:	114.3077 }, 'lion','河南開封',{ A:['lion'],B:['宋'],C:['宗教信仰'],D:['其他'],E:['東亞'] },
    {title: '描述'  
     ,description:'獅子作為文殊菩薩的坐騎，這一觀念發展至宋代已經深入人心。重陽節時，北宋首都汴梁（今河南開封）的寺廟都會舉辦法會。其中部分僧人騎乘獅子講經說法，吸引遊人觀看。'  
     ,reference:'1. 孟元老，《東京夢華錄·卷八》（上海：商務印書館據學津討源本影印，1936），頁166-167。'  
@@ -172,14 +173,14 @@ markers.lion24 = createMarker({ lat:	21.3891	,lng:	39.8579 }, 'lion','沙特阿�
 	,image:''
 	,referenceUrl:'www.zgbk.com/ecph/words?SiteID=1&ID=231255&Type=bkztb&SubID=705'});//浙江杭州,北京
 
-markers.lion25 = createMarker({ lat:	39.9042	,lng:	116.4074 }, 'lion','北京',{ A:['lion'],B:['明'],C:['身份象徵'],D:[''],E:['東亞'] },
+markers.lion25 = createMarker({ lat:	39.9042	,lng:	116.4074 }, 'lion','北京',{ A:['lion'],B:['明'],C:['身份象徵'],D:['其他'],E:['東亞'] },
    {title: '描述'  
 	,description:'補子，是明清時期官服前胸和後背上的方形刺繡，用來表明官階。根據明代禮制，獅子是一品和二品武官可以使用的補子圖案。而到了明朝中後期，獅子補則被濫用，普通武官的官服也可以使用獅子補。'  
 	,reference:'1. 張廷玉等，《明史·志第四十三》（北京：中華書局，1997），頁1638。<br>&emsp;&emsp;&emsp;2. 沈德符，《萬曆野獲編·補遺三》（北京：中華書局據清道光七年姚氏扶荔山房刻本勘校，1959），頁870。'  
 	,image:''
 	,referenceUrl:''});
 
-markers.lion26 = createMarker({ lat:	39.9245	,lng:	116.4074 }, 'lion','北京',{ A:['lion'],B:['明'],C:['朝貢'],D:[''],E:['東亞'] },
+markers.lion26 = createMarker({ lat:	39.9245	,lng:	116.4074 }, 'lion','北京',{ A:['lion'],B:['明'],C:['朝貢'],D:['其他'],E:['東亞'] },
    {title: '描述'  
 	,description:'明代建立了詳細的朝貢和回賜制度。各國所進貢的獅子需要先經過會同館評判價值，然後由錦衣衛飼養和訓練。這些獅子可能會加入明朝皇帝的儀仗隊，或者在重要的慶典上進行表演。'  
 	,reference:'1. 申時行等，《明會典·卷之一百八》（北京：中華書局據萬有文庫本排印，1989），頁585。'  
@@ -241,18 +242,6 @@ markers.lion34 = createMarker({ lat:	-25.9682 ,lng:	32.5729 }, 'lion','莫桑比
     ,reference:'1. 鄒振環，〈康熙朝西人貢獅與《獅子說》〉，《紫禁城》，期10（2018年10月），頁42,48。'  
     ,image:''
 	,referenceUrl:''});//印度果阿，中國澳門，北京
-   
-   
-   
-    //    markers.elephant1 = createMarker({ lat: 33.123, lng: 108.456 }, 'elephant');
-    //    markers.elephant2 = createMarker({ lat: 33.124, lng: 108.456 }, 'elephant');
-    //    markers.elephant3 = createMarker({ lat: 33.125, lng: 108.456 }, 'elephant');
-    //    markers.elephant4 = createMarker({ lat: 33.126, lng: 108.456 }, 'elephant');
-   
-   
-   
-
-
 
     // 获取图标和 category-container 的引用
 // 获取图标和 category-container 的引用
@@ -360,137 +349,66 @@ var taihai={lat:24.2877,lng:119.5445};
 var zhangjiagang={lat:31.8774,lng:120.4609}
 
 
-var lion4Position = lion4.getPosition();
-var initialCoords_lion4 = {
-    lat: lion4Position.lat(),
-    lng: lion4Position.lng()
-};
-var lion5Position = lion5.getPosition();
-var initialCoords_lion5 = {
-    lat: lion5Position.lat(),
-    lng: lion5Position.lng()
-};
-var lion6Position = lion6.getPosition();
-var initialCoords_lion6 = {
-    lat: lion6Position.lat(),
-    lng: lion6Position.lng()
-};
-var lion11Position = lion11.getPosition();
-var initialCoords_lion11 = {
-    lat: lion11Position.lat(),
-    lng: lion11Position.lng()
-};
+function getInitialCoords(lion) {
+    const position = lion.getPosition();
+    return {
+        lat: position.lat(),
+        lng: position.lng()
+    };
+}
 
-var lion13Position = lion13.getPosition();
-var initialCoords_lion13 = {
-    lat: lion13Position.lat(),
-    lng: lion13Position.lng()
-};
-var lion14Position = lion14.getPosition();
-var initialCoords_lion14 = {
-    lat: lion14Position.lat(),
-    lng: lion14Position.lng()
-};
-var lion15Position = lion15.getPosition();
-var initialCoords_lion15 = {
-    lat: lion15Position.lat(),
-    lng: lion15Position.lng()
-};
-var lion16Position = lion16.getPosition();
-var initialCoords_lion16 = {
-    lat: lion16Position.lat(),
-    lng: lion16Position.lng()
-};
-var lion17Position = lion17.getPosition();
-var initialCoords_lion17 = {
-    lat: lion17Position.lat(),
-    lng: lion17Position.lng()
-};
-var lion18Position = lion18.getPosition();
-var initialCoords_lion18 = {
-    lat: lion18Position.lat(),
-    lng: lion18Position.lng()
-};
+var initialCoords_lion4 = getInitialCoords(lion4);
+var initialCoords_lion5 = getInitialCoords(lion5);
+var initialCoords_lion6 = getInitialCoords(lion6);
+var initialCoords_lion11 = getInitialCoords(lion11);
+var initialCoords_lion13 = getInitialCoords(lion13);
+var initialCoords_lion14 = getInitialCoords(lion14);
+var initialCoords_lion15 = getInitialCoords(lion15);
+var initialCoords_lion16 = getInitialCoords(lion16);
+var initialCoords_lion17 = getInitialCoords(lion17);
+var initialCoords_lion18 = getInitialCoords(lion18);
 var initialCoords_lion22 = lion22.getPosition(); // 存储初始位置
-var lion23Position = lion23.getPosition();
-var initialCoords_lion23 = {
-    lat: lion23Position.lat(),
-    lng: lion23Position.lng()
-};
-var lion24Position = lion24.getPosition();
-var initialCoords_lion24 = {
-    lat: lion24Position.lat(),
-    lng: lion24Position.lng()
-};
-
-
+var initialCoords_lion23 = getInitialCoords(lion23);
+var initialCoords_lion24 = getInitialCoords(lion24);
 var initialCoords_lion27 = lion27.getPosition(); 
-
 var initialCoords_lion28 = lion28.getPosition(); // 存储初始位置
-
-var lion29Position = lion29.getPosition();
-var initialCoords_lion29 = {
-    lat: lion29Position.lat(),
-    lng: lion29Position.lng()
-};
-var lion30Position = lion30.getPosition();
-var initialCoords_lion30 = {
-    lat: lion30Position.lat(),
-    lng: lion30Position.lng()
-};
-var lion31Position = lion31.getPosition();
-var initialCoords_lion31 = {
-    lat: lion31Position.lat(),
-    lng: lion31Position.lng()
-};
-var lion32Position = lion32.getPosition();
-var initialCoords_lion32 = {
-    lat: lion32Position.lat(),
-    lng: lion32Position.lng()
-};
-var lion33Position = lion33.getPosition();
-var initialCoords_lion33 = {
-    lat: lion33Position.lat(),
-    lng: lion33Position.lng()
-};
-
-var lion34Position = lion34.getPosition(); // 存储初始位置
-var initialCoords_lion34 = {
-    lat: lion34Position.lat(),
-    lng: lion34Position.lng()
-};
-
-
-
-var timeoutId = null;
-
-
-
-
+var initialCoords_lion29 = getInitialCoords(lion29);
+var initialCoords_lion30 = getInitialCoords(lion30);
+var initialCoords_lion31 = getInitialCoords(lion31);
+var initialCoords_lion32 = getInitialCoords(lion32);
+var initialCoords_lion33 = getInitialCoords(lion33);
+var initialCoords_lion34 = getInitialCoords(lion34);
 
 // 添加滑块值变化的事件监听器
 slider.addEventListener('input', function() {
     
-    // 获取滑块的当前值
-    var currentValue = parseInt(slider.value);
-    // 显示标记
-    function toggleMarkers(showList, hideList) {
-        showList.forEach(function(marker) {
-            if (filteredMarkers.includes(marker)) {
-                marker.setMap(map);
-            }
-        });
     
-        hideList.forEach(function(marker) {
-            marker.setMap(null);
-        });
-    }
+   
     //史前
     if (currentValue<=0)
     {
-        toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11, lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19, lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34],[]);
-    
-        
+        toggleMarkers([lion1, lion2, lion3, lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11, lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19, lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34],[]);
+        lion4.setPosition(initialCoords_lion4);
+        lion5.setPosition(initialCoords_lion5);
+        lion6.setPosition(initialCoords_lion6);
+        lion11.setPosition(initialCoords_lion11);
+        lion13.setPosition(initialCoords_lion13);
+        lion14.setPosition(initialCoords_lion14);
+        lion15.setPosition(initialCoords_lion15);
+        lion16.setPosition(initialCoords_lion16);
+        lion17.setPosition(initialCoords_lion17);
+        lion18.setPosition(initialCoords_lion18);
+        lion22.setPosition(initialCoords_lion22);
+        lion23.setPosition(initialCoords_lion23);
+        lion24.setPosition(initialCoords_lion24_2);
+        lion27.setPosition(initialCoords_lion27_2);
+        lion28.setPosition(initialCoords_lion28);
+        lion29.setPosition(initialCoords_lion29);
+        lion30.setPosition(initialCoords_lion30);
+        lion31.setPosition(initialCoords_lion31);
+        lion32.setPosition(initialCoords_lion32);
+        lion33.setPosition(initialCoords_lion33);
+        lion34.setPosition(initialCoords_lion34);
      
     }
     if(currentValue>0&&currentValue<1000)
@@ -1070,13 +988,14 @@ slider.addEventListener('input', function() {
 
 var infowindows = {};
 
-// 为每个标记添加点击事件监听器
+//为每个标记添加点击事件监听器
 for (var key in markers) {
     if (markers.hasOwnProperty(key)) {
         var marker = markers[key];
 
         // 使用闭包创建新的作用域
         (function(marker, key) {
+
             marker.addListener('click', function() {
                 // 如果该标记的窗口已经打开，则关闭窗口
                 if (infowindows[key] !== undefined && infowindows[key].getMap()) {
@@ -1102,11 +1021,68 @@ for (var key in markers) {
                     infowindows[key] = infowindow;
                 }
             });
+        
+        
+        
+            // google.maps.event.addListener(map, 'zoom_changed',function() {
+            //     // 检查每个标记的可见性并关闭相关的信息窗口
+            //     for (var key in markers) {
+            //         if (markers.hasOwnProperty(key)) {
+            //             var marker = markers[key];
+            
+            //             // 如果标记已被隐藏，并且与该标记关联的信息窗口已打开，则关闭信息窗口
+            //             if (marker.getMap() === null && infowindows[key] !== undefined && infowindows[key].getMap() !== null) {
+            //                 infowindows[key].close();
+            //             }
+            //         }
+            //     }
+            // });
+            
+            // // 监听每个标记的可见性变化
+            // for (var key in markers) {
+            //     if (markers.hasOwnProperty(key)) {
+            //         var marker = markers[key];
+            
+            //         marker.addListener('visible_changed', function() {
+            //             // 如果标记不可见，并且与该标记关联的信息窗口已打开，则关闭信息窗口
+            //             if (marker.getMap() === null && infowindows[key] !== undefined && infowindows[key].getMap() !== null) {
+            //                 infowindows[key].close();
+            //             }
+            //         });
+            //     }
+            // }
+        
         })(marker, key);
     }
 }
 
+// for (var key in markers) {
+//     if (markers.hasOwnProperty(key)) {
+//         var marker = markers[key];
+//         var infowindow = null; // 用于存储信息窗口的引用
+
+//         marker.addListener('click', function() {
+//             if (infowindow !== null) {
+//                 infowindow.close();
+//                 infowindow = null; // 关闭信息窗口后将引用置为空
+//             } else {
+//                 var content = '<div class="info-window" id="infoContainer">' +
+//                     '<h1>' + marker.content.title + '</h1>' +
+//                     '<p>' + marker.content.description + '</p>' +
+//                     '<p class="info-reference">参考：' + marker.content.reference + '</p>' +
+//                     '<img class="info-image" src="' + marker.content.image + '" alt="">' +
+//                     '</div>';
+
+//                 infowindow = new google.maps.InfoWindow({
+//                     content: content
+//                 });
+
+//                 infowindow.open(map, marker);
+//             }
+//         });
+
+        
+//     }
+// }
 
 };
-
-
