@@ -731,13 +731,13 @@ slider.addEventListener('input', function() {
     //史前之前
     if (currentValue<=0)
     {
-        toggleMarkers([camel1, camel2, camel3, camel4, camel5, camel6,camel7, camel8, camel9, camel10, 
-        camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20,
-        camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29, camel30,
-        camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
-        camel41, camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
-        camel51, camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
-        camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68],[]);
+        // toggleMarkers([camel1, camel2, camel3, camel4, camel5, camel6,camel7, camel8, camel9, camel10, 
+        // camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20,
+        // camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29, camel30,
+        // camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
+        // camel41, camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
+        // camel51, camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
+        // camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68],[]);
 
         markers.camel3.setPosition(initialCoords_camel3);
         markers.camel4.setPosition(initialCoords_camel4);
@@ -792,15 +792,15 @@ slider.addEventListener('input', function() {
     //史前
     if(currentValue>0&&currentValue<1000)
     {
-        toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel8, camel9,], 
-        [camel6,camel7, camel10, 
-            camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
-            camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29, camel30, 
-            camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
-            camel41, camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
-            camel51, camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
-            camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
-        ]);
+        // toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel8, camel9,], 
+        // [camel6,camel7, camel10, 
+        //     camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
+        //     camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29, camel30, 
+        //     camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
+        //     camel41, camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
+        //     camel51, camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
+        //     camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
+        // ]);
         
 
         // if(currentValue==0){
@@ -867,15 +867,15 @@ slider.addEventListener('input', function() {
     //秦汉
     if (currentValue >= 1000 && currentValue < 2000) {
         
-        toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
-            camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, ], 
-            [   camel20, 
-                camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29, camel30, 
-                camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
-                camel41, camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
-                camel51, camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
-                camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
-            ]);
+        // toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
+        //     camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, ], 
+        //     [   camel20, 
+        //         camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29, camel30, 
+        //         camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
+        //         camel41, camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
+        //         camel51, camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
+        //         camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
+        //     ]);
 
         
         // 在1000到2000的范围内时执行标记位置的更新
@@ -993,15 +993,15 @@ slider.addEventListener('input', function() {
     }
     //三国
     if (currentValue >= 2000 && currentValue <3000) {
-        toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
-            camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
-            camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,], 
-            [   camel30, 
-                camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
-                camel41, camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
-                camel51, camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
-                camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
-            ]);
+        // toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
+        //     camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
+        //     camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,], 
+        //     [   camel30, 
+        //         camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
+        //         camel41, camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
+        //         camel51, camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
+        //         camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
+        //     ]);
         // if(currentValue==2000){
         //     markers.camel22.setPosition(newCoords_camel22);
         //     markers.camel24.setPosition(newCoords_camel24);
@@ -1070,15 +1070,15 @@ slider.addEventListener('input', function() {
     }
     //隋
     if(currentValue>=3000&&currentValue<4000){
-        toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
-            camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
-            camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,camel30, 
-            camel31, camel32,], 
-            [   camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
-                camel41, camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
-                camel51, camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
-                camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
-            ]);
+        // toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
+        //     camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
+        //     camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,camel30, 
+        //     camel31, camel32,], 
+        //     [   camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
+        //         camel41, camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
+        //         camel51, camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
+        //         camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
+        //     ]);
 
             var points_30 = [initialCoords_camel30, dunhuang,wuwei,newCoords_camel30_1, newCoords_camel30_1];
             var points_31 = [initialCoords_camel31, newCoords_camel31_1, newCoords_camel31_1];
@@ -1126,15 +1126,15 @@ slider.addEventListener('input', function() {
     }
     //唐
     if (currentValue >= 4000 && currentValue < 5000) {
-        toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
-            camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
-            camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,camel30, 
-            camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
-            camel41,], 
-            [   camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
-                camel51, camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
-                camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
-            ]);
+        // toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
+        //     camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
+        //     camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,camel30, 
+        //     camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
+        //     camel41,], 
+        //     [   camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
+        //         camel51, camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
+        //         camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
+        //     ]);
         // 在1000到2000的范围内时执行标记位置的更新
         // if(currentValue>=4000){
         //     markers.camel4.setPosition(newCoords_camel4);
@@ -1214,15 +1214,15 @@ slider.addEventListener('input', function() {
     }
     //宋
     if (currentValue >= 5000 && currentValue <6000) {
-        toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
-            camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
-            camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,camel30, 
-            camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
-            camel41,   camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
-            camel51,  ], 
-            [ camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
-                camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
-            ]);
+        // toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
+        //     camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
+        //     camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,camel30, 
+        //     camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
+        //     camel41,   camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
+        //     camel51,  ], 
+        //     [ camel52, camel53, camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
+        //         camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
+        //     ]);
         // 在2000到3000的范围内时执行标记位置的更新
         // if (currentValue >= 5000) {
         //     // 如果滑块值为4000，将标记位置还原到初始位置41
@@ -1336,15 +1336,15 @@ slider.addEventListener('input', function() {
     }
     //元
     if (currentValue >= 6000 && currentValue <7000) {
-        toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
-            camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
-            camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,camel30, 
-            camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
-            camel41,   camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
-            camel51, camel52, camel53, ], 
-            [  camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
-                camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
-            ]);
+        // toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
+        //     camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
+        //     camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,camel30, 
+        //     camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
+        //     camel41,   camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
+        //     camel51, camel52, camel53, ], 
+        //     [  camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
+        //         camel61, camel62, camel63, camel64,camel65, camel66, camel67, camel68
+        //     ]);
         // 定义要经过的点
         // if(currentValue>=6000){
         //     camel4.setPosition(newCoords_camel4);
@@ -1388,15 +1388,15 @@ slider.addEventListener('input', function() {
    //明
     if(currentValue >=7000 && currentValue <8000){
       
-        toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
-            camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
-            camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,camel30, 
-            camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
-            camel41,   camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
-            camel51, camel52, camel53,  camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
-            camel61, camel62, camel63,], 
-            [ camel64,camel65, camel66, camel67, camel68
-            ]);
+        // toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
+        //     camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
+        //     camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,camel30, 
+        //     camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
+        //     camel41,   camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
+        //     camel51, camel52, camel53,  camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
+        //     camel61, camel62, camel63,], 
+        //     [ camel64,camel65, camel66, camel67, camel68
+        //     ]);
         // if(currentValue>=7000){
         //     camel4.setPosition(newCoords_camel4);
         //     camel5.setPosition(newCoords_camel5);
@@ -1528,15 +1528,15 @@ slider.addEventListener('input', function() {
 
     //清
     if(currentValue >=8000 && currentValue <=9000){
-        toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
-            camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
-            camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,camel30, 
-            camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
-            camel41,   camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
-            camel51, camel52, camel53,  camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
-            camel61, camel62, camel63,camel64,camel65, camel66, camel67, camel68], 
-            [ 
-            ]);
+        // toggleMarkers([camel1, camel2, camel3,camel4, camel5 , camel6,camel7,camel8, camel9, camel10, 
+        //     camel11, camel12, camel13, camel14, camel15, camel16, camel17, camel18, camel19, camel20, 
+        //     camel21, camel22, camel23, camel24, camel25, camel26, camel27, camel28, camel29,camel30, 
+        //     camel31, camel32, camel33, camel34,camel35, camel36, camel37, camel38, camel39, camel40, 
+        //     camel41,   camel42, camel43, camel44, camel45, camel46,camel47, camel48, camel49, camel50, 
+        //     camel51, camel52, camel53,  camel54, camel55,camel56, camel57, camel58, camel59, camel60, 
+        //     camel61, camel62, camel63,camel64,camel65, camel66, camel67, camel68], 
+        //     [ 
+        //     ]);
         if(currentValue>=8000){
             // camel4.setPosition(newCoords_camel4);
             // camel5.setPosition(newCoords_camel5);
