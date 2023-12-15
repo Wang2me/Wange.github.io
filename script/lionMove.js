@@ -387,7 +387,7 @@ slider.addEventListener('input', function() {
     //史前
     if (currentValue<=0)
     {
-        toggleMarkers([lion1, lion2, lion3, lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11, lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19, lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34],[]);
+        //toggleMarkers([lion1, lion2, lion3, lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11, lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19, lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34],[]);
         lion4.setPosition(initialCoords_lion4);
         lion5.setPosition(initialCoords_lion5);
         lion6.setPosition(initialCoords_lion6);
@@ -413,16 +413,16 @@ slider.addEventListener('input', function() {
     }
     if(currentValue>0&&currentValue<1000)
     {
-        toggleMarkers([lion1, lion2, lion3], 
-        [lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11, lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19, lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
+        //toggleMarkers([lion1, lion2, lion3], 
+        //[lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11, lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19, lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
         
      
     }
     //秦汉
     if (currentValue >= 1000 && currentValue < 2000) {
         
-        toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6], 
-        [lion7, lion8, lion9, lion10, lion11, lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19, lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
+        // toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6], 
+        // [lion7, lion8, lion9, lion10, lion11, lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19, lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
 
 
         
@@ -477,8 +477,8 @@ slider.addEventListener('input', function() {
     }
     //三国
     if (currentValue >= 2000 && currentValue <3000) {
-        toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11], 
-        [lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19, lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
+        // toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11], 
+        // [lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19, lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
 
 
         if(currentValue>=2000){
@@ -503,8 +503,8 @@ slider.addEventListener('input', function() {
     }
     //隋
     if(currentValue>=3000&&currentValue<4000){
-        toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11], 
-        [lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19, lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
+        // toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11], 
+        // [lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19, lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
 
         if(currentValue>=3000){
         markers.lion4.setPosition(newCoords_lion4);
@@ -523,8 +523,8 @@ slider.addEventListener('input', function() {
     }
     //唐
     if (currentValue >= 4000 && currentValue < 5000) {
-        toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11,lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19], 
-        [lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
+        // toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11,lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19], 
+        // [lion20, lion21, lion22, lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
 
         // 在1000到2000的范围内时执行标记位置的更新
         if(currentValue>=4000){
@@ -619,8 +619,8 @@ slider.addEventListener('input', function() {
     }
     //宋
     if (currentValue >= 5000 && currentValue <6000) {
-        toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11,lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19,lion20, lion21, lion22], 
-        [lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
+        // toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11,lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19,lion20, lion21, lion22], 
+        // [lion23, lion24, lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
 
         // 在2000到3000的范围内时执行标记位置的更新
         if (currentValue >= 5000) {
@@ -650,8 +650,8 @@ slider.addEventListener('input', function() {
     }
     //元
     if (currentValue >= 6000 && currentValue <7000) {
-        toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11,lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19,lion20, lion21, lion22,lion23, lion24], 
-        [lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
+        // toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11,lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19,lion20, lion21, lion22,lion23, lion24], 
+        // [lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33, lion34]);
 
         // 定义要经过的点
         if(currentValue>=6000){
@@ -700,7 +700,7 @@ slider.addEventListener('input', function() {
    //明
     if(currentValue >=7000 && currentValue <8000){
       
-        toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11,lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19,lion20, lion21, lion22,lion23, lion24,lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33], [lion34]);
+        // toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11,lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19,lion20, lion21, lion22,lion23, lion24,lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33], [lion34]);
 
         if(currentValue>=7000){
             lion4.setPosition(newCoords_lion4);
@@ -903,7 +903,7 @@ slider.addEventListener('input', function() {
 
     //清
     if(currentValue >=8000 && currentValue <=9000){
-        toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11,lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19,lion20, lion21, lion22,lion23, lion24,lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33,lion34], []);
+        // toggleMarkers([lion1, lion2, lion3,lion4, lion5, lion6,lion7, lion8, lion9, lion10, lion11,lion12, lion13, lion14, lion15, lion16, lion17, lion18, lion19,lion20, lion21, lion22,lion23, lion24,lion25, lion26, lion27, lion28, lion29, lion30, lion31, lion32, lion33,lion34], []);
 
 
         if(currentValue>=8000){
